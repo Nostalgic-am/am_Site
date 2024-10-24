@@ -1,0 +1,55 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border-radius: 50px;
+  background: #004040;
+  color:aliceblue;
+}
+
+.box-container{
+  display: flex;
+  flex-direction: column; /* Stack rows vertically */
+  gap: 40px; /* Adds space between the top and bottom rows */
+}
+
+.top-row, .bottom-row{
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Space between the boxes in each row */
+}
+
+/* Centered Box */
+.topL-box, .topR-box, .bottomL-box, .bottomR-box {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ 
+}
+
+.topL-box, .bottomR-box{
+  border-radius: 70px;
+  background: #004040;
+  box-shadow: inset -19px -19px 59px #002323,
+              inset 19px 19px 59px #005d5d;
+}
+
+.topR-box, .bottomL-box {
+  border-radius: 70px;
+  background: #004040;
+  box-shadow: inset -19px -19px 59px #002323,
+              inset 19px 19px 59px #005d5d;
+}
+
